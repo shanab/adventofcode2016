@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"container/list"
+	"fmt"
+)
 
 /*
 --- Day 11: Radioisotope Thermoelectric Generators ---
@@ -111,29 +114,46 @@ The second floor contains a polonium-compatible microchip and a promethium-compa
 The third floor contains nothing relevant.
 The fourth floor contains nothing relevant.`
 
-const (
-	PoloniumGenerator = iota
-	ThuliumGenerator
-	PromethiumGenerator
-	RutheniumGenerator
-	CobaltGenerator
-)
+const solution = "3-0000000000-0000000000-0000000000-1111111111"
 
-const (
-	PoloniumChip = iota + 10
-	ThuliumChip
-	PromethiumChip
-	RutheniumChip
-	CobaltChip
-)
+var (
+	// PM, TM, ProM, RM, CM, PG, TG, ProG, RG, CG
+	startNode = NewNode(0, 0, [][]byte{
+		[]byte("0101111111"),
+		[]byte("1010000000"),
+		[]byte("0000000000"),
+		[]byte("0000000000"),
+	})
 
-var input = [][]int{
-	{PoloniumGenerator, ThuliumGenerator, ThuliumChip, PromethiumGenerator, RutheniumGenerator, RutheniumChip, CobaltGenerator, CobaltChip},
-	{PoloniumChip, PromethiumChip},
-	{},
-	{},
-}
+	// ${index}-${1st row}${2nd row}${3rd row}${4th row}
+	visited = make(map[string]bool)
+	queue   = list.New()
+)
 
 func main() {
-	fmt.Println(input)
+	fmt.Println(FindMinimumSteps())
+}
+
+func FindMinimumSteps() int {
+	queue.PushBack(startNode)
+	visited[startNode.String()] = true
+
+	for queue.Len() != 0 {
+		e := queue.Front()
+		node := queue.Remove(e).(*Node)
+
+		if node.String() == solution {
+			return node.depth
+		}
+
+		for _, c := range node.Children() {
+			cStr := c.String()
+			if !visited[cStr] {
+				queue.PushBack(c)
+				visited[cStr] = true
+			}
+		}
+	}
+
+	return -1
 }
