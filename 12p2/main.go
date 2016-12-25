@@ -36,6 +36,12 @@ dec a
 The above code would set register a to 41, increase its value by 2, decrease its value by 1, and then skip the last dec a (because a is not zero, so the jnz a 2 skips it), leaving register a at 42. When you move past the last instruction, the program halts.
 
 After executing the assembunny code in your puzzle input, what value is left in register a?
+
+--- Part Two ---
+
+As you head down the fire escape to the monorail, you notice it didn't start; register c needs to be initialized to the position of the ignition key.
+
+If you instead initialize register c to be 1, what value is now left in register a?
 */
 
 const INPUT = `cpy 1 a
@@ -71,7 +77,9 @@ func main() {
 type Registers map[byte]int
 
 func CreateRegisters() Registers {
-	return make(Registers)
+	registers := make(Registers)
+	registers['c'] = 1
+	return registers
 }
 
 func (r Registers) Execute(instruction string) int {
