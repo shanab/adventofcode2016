@@ -6,7 +6,7 @@ import (
 	"strings"
 )
 
-const PROBLEM_STATEMENT = `
+/*
 --- Day 8: Two-Factor Authentication ---
 
 You come across a door implementing what you can only assume is an implementation of two-factor authentication after a long game of requirements telephone.
@@ -44,7 +44,8 @@ rotate column x=1 by 1 again rotates the second column down by one pixel, causin
 .#.....
 As you can see, this display technology is extremely powerful, and will soon dominate the tiny-code-displaying-screen market. That's what the advertisement on the back of the display tries to convince you, anyway.
 
-There seems to be an intermediate check of the voltage used by the display: after you swipe your card, if the screen did work, how many pixels should be lit?`
+There seems to be an intermediate check of the voltage used by the display: after you swipe your card, if the screen did work, how many pixels should be lit?
+*/
 
 const INPUT = `rect 1x1
 rotate row y=0 by 5

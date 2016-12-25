@@ -4,7 +4,7 @@ import (
 	"fmt"
 )
 
-const PROBLEM_STATEMENT = `
+/*
 --- Day 6: Signals and Noise ---
 
 Something is jamming your communications with Santa. Fortunately, your signal is only partially jammed, and protocol in situations like this is to switch to a simple repetition code to get the message through.
@@ -31,7 +31,8 @@ dvrsen
 enarar
 The most common character in the first column is e; in the second, a; in the third, s, and so on. Combining these characters returns the error-corrected message, easter.
 
-Given the recording in your puzzle input, what is the error-corrected version of the message being sent?`
+Given the recording in your puzzle input, what is the error-corrected version of the message being sent?
+*/
 
 const INPUT = `yksqurlc
 hangxyoi

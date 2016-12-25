@@ -5,7 +5,7 @@ import (
 	"fmt"
 )
 
-const PROBLEM_STATEMENT = `
+/*
 --- Day 5: How About a Nice Game of Chess? ---
 
 You are faced with a security door designed by Easter Bunny engineers that seem to have acquired most of their security knowledge by watching hacking movies.
@@ -38,7 +38,8 @@ In the previous method, 5017308 produced an interesting hash; however, it is ign
 The second interesting hash is at index 5357525, which produces 000004e...; so, e goes in position 4: _5__e___.
 You almost choke on your popcorn as the final character falls into place, producing the password 05ace8e3.
 
-Given the actual Door ID and this new method, what is the password? Be extra proud of your solution if it uses a cinematic "decrypting" animation.`
+Given the actual Door ID and this new method, what is the password? Be extra proud of your solution if it uses a cinematic "decrypting" animation.
+*/
 
 const INPUT = `reyedfim`
 

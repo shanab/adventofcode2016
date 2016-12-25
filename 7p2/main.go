@@ -5,7 +5,7 @@ import (
 	"strings"
 )
 
-const PROBLEM_STATEMENT = `
+/*
 --- Day 7: Internet Protocol Version 7 ---
 
 While snooping around the local network of EBHQ, you compile a list of IP addresses (they're IPv7, of course; IPv6 is much too limited). You'd like to figure out which IPs support TLS (transport-layer snooping).
@@ -32,7 +32,8 @@ aba[bab]xyz supports SSL (aba outside square brackets with corresponding bab wit
 xyx[xyx]xyx does not support SSL (xyx, but no corresponding yxy).
 aaa[kek]eke supports SSL (eke in supernet with corresponding kek in hypernet; the aaa sequence is not related, because the interior character must be different).
 zazbz[bzb]cdb supports SSL (zaz has no corresponding aza, but zbz has a corresponding bzb, even though zaz and zbz overlap).
-How many IPs in your puzzle input support SSL?`
+How many IPs in your puzzle input support SSL?
+*/
 
 const INPUT = `dnwtsgywerfamfv[gwrhdujbiowtcirq]bjbhmuxdcasenlctwgh
 rnqfzoisbqxbdlkgfh[lwlybvcsiupwnsyiljz]kmbgyaptjcsvwcltrdx[ntrpwgkrfeljpye]jxjdlgtntpljxaojufe

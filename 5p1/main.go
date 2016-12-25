@@ -5,7 +5,7 @@ import (
 	"fmt"
 )
 
-const PROBLEM_STATEMENT = `
+/*
 --- Day 5: How About a Nice Game of Chess? ---
 
 You are faced with a security door designed by Easter Bunny engineers that seem to have acquired most of their security knowledge by watching hacking movies.
@@ -21,7 +21,8 @@ The first index which produces a hash that starts with five zeroes is 3231929, w
 The third time a hash starts with five zeroes is for abc5278568, discovering the character f.
 In this example, after continuing this search a total of eight times, the password is 18f47a30.
 
-Given the actual Door ID, what is the password?`
+Given the actual Door ID, what is the password?
+*/
 
 const INPUT = `reyedfim`
 

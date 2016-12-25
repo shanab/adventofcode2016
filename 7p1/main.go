@@ -5,7 +5,7 @@ import (
 	"strings"
 )
 
-const PROBLEM_STATEMENT = `
+/*
 --- Day 7: Internet Protocol Version 7 ---
 
 While snooping around the local network of EBHQ, you compile a list of IP addresses (they're IPv7, of course; IPv6 is much too limited). You'd like to figure out which IPs support TLS (transport-layer snooping).
@@ -18,7 +18,8 @@ abba[mnop]qrst supports TLS (abba outside square brackets).
 abcd[bddb]xyyx does not support TLS (bddb is within square brackets, even though xyyx is outside square brackets).
 aaaa[qwer]tyui does not support TLS (aaaa is invalid; the interior characters must be different).
 ioxxoj[asdfgh]zxcvbn supports TLS (oxxo is outside square brackets, even though it's within a larger string).
-How many IPs in your puzzle input support TLS?`
+How many IPs in your puzzle input support TLS?
+*/
 
 const INPUT = `dnwtsgywerfamfv[gwrhdujbiowtcirq]bjbhmuxdcasenlctwgh
 rnqfzoisbqxbdlkgfh[lwlybvcsiupwnsyiljz]kmbgyaptjcsvwcltrdx[ntrpwgkrfeljpye]jxjdlgtntpljxaojufe

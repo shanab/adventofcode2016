@@ -7,7 +7,7 @@ import (
 	"strings"
 )
 
-const PROBLEM_STATEMENT = `
+/*
 --- Day 4: Security Through Obscurity ---
 
 Finally, you come across an information kiosk with a list of rooms. Of course, the list is encrypted and full of decoy data, but the instructions to decode the list are barely hidden nearby. Better remove the decoy data first.
@@ -34,7 +34,8 @@ To decrypt a room name, rotate each letter forward through the alphabet a number
 
 For example, the real name for qzmt-zixmtkozy-ivhz-343 is very encrypted name.
 
-What is the sector ID of the room where North Pole objects are stored?`
+What is the sector ID of the room where North Pole objects are stored?
+*/
 
 const INPUT = `bkwzkqsxq-tovvilokx-nozvyiwoxd-172[fstek]
 wifilzof-wbiwifuny-yhachyylcha-526[qrazx]

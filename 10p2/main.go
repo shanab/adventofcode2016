@@ -6,7 +6,8 @@ import (
 	"strings"
 )
 
-const PROBLEM_STATEMENT = `--- Day 10: Balance Bots ---
+/*
+--- Day 10: Balance Bots ---
 
 You come upon a factory in which many robots are zooming around handing small microchips to each other.
 
@@ -34,7 +35,8 @@ Based on your instructions, what is the number of the bot that is responsible fo
 
 --- Part Two ---
 
-What do you get if you multiply together the values of one chip in each of outputs 0, 1, and 2?`
+What do you get if you multiply together the values of one chip in each of outputs 0, 1, and 2?
+*/
 
 const INPUT = `bot 88 gives low to bot 51 and high to bot 42
 bot 13 gives low to bot 4 and high to bot 167

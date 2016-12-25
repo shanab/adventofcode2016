@@ -6,7 +6,8 @@ import (
 	"strings"
 )
 
-const PROBLEM_STATEMENT = `--- Day 10: Balance Bots ---
+/*
+--- Day 10: Balance Bots ---
 
 You come upon a factory in which many robots are zooming around handing small microchips to each other.
 
@@ -30,7 +31,8 @@ Then, bot 1 has two microchips; it puts the value-2 chip in output 1 and gives t
 Finally, bot 0 has two microchips; it puts the 3 in output 2 and the 5 in output 0.
 In the end, output bin 0 contains a value-5 microchip, output bin 1 contains a value-2 microchip, and output bin 2 contains a value-3 microchip. In this configuration, bot number 2 is responsible for comparing value-5 microchips with value-2 microchips.
 
-Based on your instructions, what is the number of the bot that is responsible for comparing value-61 microchips with value-17 microchips?`
+Based on your instructions, what is the number of the bot that is responsible for comparing value-61 microchips with value-17 microchips?
+*/
 
 const INPUT = `bot 88 gives low to bot 51 and high to bot 42
 bot 13 gives low to bot 4 and high to bot 167

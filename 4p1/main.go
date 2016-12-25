@@ -7,7 +7,7 @@ import (
 	"strings"
 )
 
-const PROBLEM_STATEMENT = `
+/*
 --- Day 4: Security Through Obscurity ---
 
 Finally, you come across an information kiosk with a list of rooms. Of course, the list is encrypted and full of decoy data, but the instructions to decode the list are barely hidden nearby. Better remove the decoy data first.
@@ -22,7 +22,8 @@ not-a-real-room-404[oarel] is a real room.
 totally-real-room-200[decoy] is not.
 Of the real rooms from the list above, the sum of their sector IDs is 1514.
 
-What is the sum of the sector IDs of the real rooms?`
+What is the sum of the sector IDs of the real rooms?
+*/
 
 const INPUT = `bkwzkqsxq-tovvilokx-nozvyiwoxd-172[fstek]
 wifilzof-wbiwifuny-yhachyylcha-526[qrazx]

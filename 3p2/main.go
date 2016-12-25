@@ -6,7 +6,7 @@ import (
 	"strings"
 )
 
-const PROBLEM_STATEMENT = `
+/*
 --- Day 3: Squares With Three Sides ---
 
 Now that you can think clearly, you move deeper into the labyrinth of hallways and office furniture that makes up this part of Easter Bunny HQ. This must be a graphic design department; the walls are covered in specifications for triangles.
@@ -31,7 +31,8 @@ For example, given the following specification, numbers with the same hundreds d
 201 401 601
 202 402 602
 203 403 603
-In your puzzle input, and instead reading by columns, how many of the listed triangles are possible?`
+In your puzzle input, and instead reading by columns, how many of the listed triangles are possible?
+*/
 
 const INPUT = `  775  785  361
   622  375  125
