@@ -95,10 +95,11 @@ func isOpen(b byte) bool {
 }
 
 func main() {
-	fmt.Println(ShortestPath(SAMPLE, WIDTH, HEIGHT))
+	fmt.Println(LongestPath(INPUT, WIDTH, HEIGHT))
 }
 
-func ShortestPath(input string, width, height int) string {
+func LongestPath(input string, width, height int) int {
+	var longest int
 	length := len(input)
 	queue := list.New()
 	dest := Pos{3, 3}
@@ -108,7 +109,11 @@ func ShortestPath(input string, width, height int) string {
 		elem := queue.Front()
 		node := queue.Remove(elem).(Node)
 		if node.pos == dest {
-			return string(node.passcode[length:])
+			l := len(node.passcode) - length
+			if longest < l {
+				longest = l
+			}
+			continue
 		}
 
 		for _, n := range node.Children(width, height) {
@@ -116,5 +121,5 @@ func ShortestPath(input string, width, height int) string {
 		}
 	}
 
-	return "NOT FOUND"
+	return longest
 }
